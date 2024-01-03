@@ -1,10 +1,5 @@
 const BeforeLoginLayout = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <main>
-      BeforeLoginLayout
-      {children}
-    </main>
-  );
+  return <main>{children}</main>;
 };
 
 export default BeforeLoginLayout;
