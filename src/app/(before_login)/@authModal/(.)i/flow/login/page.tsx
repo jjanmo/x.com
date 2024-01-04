@@ -3,7 +3,7 @@
 import styles from '@/styles/AuthModal.module.css';
 import { useRouter } from 'next/navigation';
 
-export default function AuthModal() {
+export default function Login() {
   const router = useRouter();
   const handleClose = () => {
     router.back();
