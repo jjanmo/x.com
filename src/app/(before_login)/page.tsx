@@ -13,14 +13,14 @@ const Main = () => {
           <h1 className={styles.title}>지금 일어나고 있는 일</h1>
           <h2 className={styles.subtitle}>지금 가입하세요.</h2>
           <div className={styles.line}></div>
-          <Link href="" className={`${styles.button} ${styles.signup}`}>
+          <Link href="/i/flow/signup" className={`${styles.button} ${styles.signup}`}>
             계정 만들기
           </Link>
           <div className={styles.loginWrapper}>
             <div className={styles.message}>
               <span>이미 트위터에 가입하셨나요</span>
             </div>
-            <Link href="" className={`${styles.button} ${styles.login}`}>
+            <Link href="/i/flow/login" className={`${styles.button} ${styles.login}`}>
               로그인
             </Link>
           </div>

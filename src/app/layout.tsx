@@ -1,15 +1,16 @@
-import type { Metadata } from 'next';
 import '../styles/global.css';
 
-export const metadata: Metadata = {
-  title: 'X',
-  description: '무슨 일이 일어나고 있나요?',
-};
+interface Props {
+  children: React.ReactNode;
+}
 
-const RootLayout = ({ children }: { children: React.ReactNode }) => {
+const RootLayout = ({ children }: Props) => {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        루트 레이아웃
+        {children}
+      </body>
     </html>
   );
 };
