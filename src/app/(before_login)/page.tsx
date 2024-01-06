@@ -5,6 +5,9 @@ import Link from 'next/link';
 const Main = () => {
   return (
     <div className={styles.container}>
+      <h1>H1 - Hello World</h1>
+      <h2>H2 - Hello World</h2>
+      <h3>H3 - Hello World</h3>
       <div className={styles.left}>
         <Logo />
       </div>
