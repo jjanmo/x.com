@@ -1,3 +1,4 @@
+import '@/styles/normalize.css';
 import '@/styles/globals.css';
 
 interface Props {
@@ -7,10 +8,7 @@ interface Props {
 const RootLayout = ({ children }: Props) => {
   return (
     <html lang="en">
-      <body>
-        루트 레이아웃
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 };

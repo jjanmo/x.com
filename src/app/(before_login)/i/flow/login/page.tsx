@@ -1,5 +1,7 @@
-const Login = () => {
-  return <div>새로 고침했을 때 Login Page</div>;
+import LoginModal from '@/app/(before_login)/_components/LoginModal';
+
+const LoginPage = () => {
+  return <LoginModal />;
 };
 
-export default Login;
+export default LoginPage;
