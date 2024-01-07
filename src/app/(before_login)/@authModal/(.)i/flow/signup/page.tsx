@@ -1,5 +1,7 @@
-const Signup = () => {
-  return <div>Signup Page</div>;
+import SignupModal from '@/app/(before_login)/_components/SignupModal';
+
+const SignupPage = () => {
+  return <SignupModal />;
 };
 
-export default Signup;
+export default SignupPage;
