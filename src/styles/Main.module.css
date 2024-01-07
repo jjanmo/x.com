@@ -41,18 +41,20 @@
   font-size: 16px;
   font-weight: 600;
 }
-.signup {
+.signupButton {
+  composes: button;
   color: white;
   background-color: #1d9bf0;
 }
-.signup:hover {
+.signupButton:hover {
   background-color: #1a8cd8;
 }
-.login {
+.loginButton {
+  composes: button;
   color: #1d9bf0;
   border: 1px solid #d1dbe0;
 }
-.login:hover {
+.loginButton:hover {
   background-color: #ebf6fd;
 }
 .loginWrapper {
