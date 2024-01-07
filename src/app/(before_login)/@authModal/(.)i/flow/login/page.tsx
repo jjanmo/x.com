@@ -1,5 +1,7 @@
 'use client';
 
+import Logo from '@/components/icons/Logo';
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/Dialog';
 import styles from '@/styles/AuthModal.module.css';
 import { useRouter } from 'next/navigation';
 
@@ -10,15 +12,18 @@ export default function Login() {
   };
 
   return (
-    <div className={styles.container}>
-      <button onClick={handleClose} className={styles.closeButton}>
-        X
-      </button>
-      <h1>로그인 모달</h1>
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eos sequi nam aut facere quam, iusto
-        laboriosam et cumque vitae iste adipisci perspiciatis! Amet unde delectus, ipsum praesentium perspiciatis culpa.
-      </div>
-    </div>
+    <Dialog>
+      <DialogContent>
+        <DialogHeader>
+          <DialogTitle>X 가입하기</DialogTitle>
+          <DialogDescription></DialogDescription>
+        </DialogHeader>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eos sequi nam aut facere quam, iusto
+          laboriosam et cumque vitae iste adipisci perspiciatis! Amet unde delectus, ipsum praesentium perspiciatis
+          culpa.
+        </div>
+      </DialogContent>
+    </Dialog>
   );
 }
