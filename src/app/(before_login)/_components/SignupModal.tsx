@@ -2,7 +2,8 @@
 
 import { useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form';
-import styles from '@/styles/LoginModal.module.css';
+import styles from '@/styles/AuthModal.module.css';
+import Icon from '@/components/Icon';
 
 interface SignupInput {
   email: string;
@@ -31,7 +32,7 @@ const LoginModal = () => {
 
       <div className={styles.content}>
         <button onClick={handleClose} className={styles.closeButton}>
-          X
+          <Icon name="X" size={30} />
         </button>
         <h1>X 가입하기</h1>
         <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
